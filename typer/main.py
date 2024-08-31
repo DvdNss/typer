@@ -892,7 +892,7 @@ def get_click_param(
         # Check the multiple separator option for validity
         separator = None
         if parameter_info.separator:
-            separator = parameter_info.separator.strip()
+            separator = parameter_info.separator
 
             if not is_list:
                 raise SeparatorForNonListTypeError(param.name, main_type)
